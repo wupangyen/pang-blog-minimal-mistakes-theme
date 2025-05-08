@@ -40,6 +40,11 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if page.image %}
+  <div class="page__image">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+{% endif %}
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc">
