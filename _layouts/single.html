@@ -40,7 +40,7 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
-        <p>By {{ page.author }}</p>
+        <p>By {{ page.author }} on {{page.date | date: "%B %e, %Y %I:%M %p" }}</p>
   <div class="page__image">
     <img src="{{ page.thumbnail }}" alt="Image for {{ page.title }}">
   </div>
