@@ -7,7 +7,6 @@
         {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
         <time datetime="{{ date | date_to_xmlschema }}">{{ date | date: date_format }}</time>
       </span>
-      <div class = "page__meta">By {{ document.author }} on {{ document.date | date: "%B %-d, %Y %I:%M %p" }}</div>
     {% if document.show_date and document.date %}
     {% endif %}
 
