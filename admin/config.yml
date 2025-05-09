@@ -17,5 +17,5 @@ collections:
       - { label: "Author", name: "author", widget: "string"}
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Audio", name: "audio", widget: "file", required: "false", media_folder: "assets/audio", public_folder: "/assets/audio", hint: "Upload an MP3 file to embed audio in your post"}
+      - { label: "Audio", name: "audio", widget: "file", required: false, media_folder: "assets/audio", public_folder: "/assets/audio", hint: "Upload an MP3 file to embed audio in your post"}
       - { label: "Body", name: "body", widget: "markdown" }
