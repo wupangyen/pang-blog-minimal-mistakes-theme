@@ -24,7 +24,7 @@
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    <p class="archive__item-meta">By {{ page.author }} on {{page.date | date: "%B %e, %Y %I:%M %p" }}</p>
+    <p class="archive__item-meta">By {{ post.author }} on {{post.date | date: "%B %e, %Y %I:%M %p" }}</p>
 
 
     {% include page__meta.html type=include.type %}
