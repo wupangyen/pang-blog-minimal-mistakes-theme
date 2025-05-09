@@ -45,8 +45,9 @@ layout: default
     <img src="{{ page.thumbnail }}" alt="Image for {{ page.title }}">
   </div>
   <audio controls>
-    <source src="/assets/audio/oklahoma-christian-university-2.m4a" type ="audio/mp4"> 
-  </audio>
+  <source src="{{ '/assets/audio/oklahoma-christian-university-2.m4a' | relative_url }}" type="audio/mp4">
+  Your browser does not support the audio element.
+</audio>
 
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
