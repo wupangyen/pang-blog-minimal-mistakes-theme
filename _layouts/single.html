@@ -39,8 +39,8 @@ layout: default
         </header>
       {% endunless %}
 
-      <section class="page__content" itemprop="text">
-        <p class="page__meta">By {{ page.author }} on {{page.date | date: "%B %e, %Y %I:%M %p" }}</p>
+      <section class="page__meta" itemprop="text">
+        <p>By {{ page.author }} on {{page.date | date: "%B %e, %Y %I:%M %p" }}</p>
   <div class="page__image">
     <img src="{{ page.thumbnail }}" alt="Image for {{ page.title }}">
   </div>
