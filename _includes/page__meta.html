@@ -28,12 +28,12 @@
       </span>
     {% endif %}
     {% if document.author %}
-    <span class="page__meta"
+    <p class="page__meta"
     By {{ document.author }} 
     {% if document.date %}
     on {{ document.date | date: "%B %-d, %Y %I:%M %p" }}
     {% endif %}
-    </span>
+    </p>
     {% endif %}
   </p>
 {% endif %}
