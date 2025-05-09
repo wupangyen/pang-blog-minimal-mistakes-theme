@@ -34,13 +34,14 @@ layout: default
           <h1 id="page-title" class="page__title" itemprop="headline">
             <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
           </h1>
+          <p>By {{ page.author }} on {{page.date | date: "%B %e, %Y %I:%M %p" }}</p>
           {%- endif %}
           {% include page__meta.html %}
         </header>
       {% endunless %}
 
       <section class="page__meta" itemprop="text">
-        <p>By {{ page.author }} on {{page.date | date: "%B %e, %Y %I:%M %p" }}</p>
+        
   <div class="page__image">
     <img src="{{ page.thumbnail }}" alt="Image for {{ page.title }}">
   </div>
