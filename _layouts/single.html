@@ -44,10 +44,13 @@ layout: default
   <div class="page__image">
     <img src="{{ page.thumbnail }}" alt="Image for {{ page.title }}">
   </div>
+  {% if page.audio %}
   <audio controls>
   <source src="{{ page.audio | relative_url }}" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+{% endif %}
+
 
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
