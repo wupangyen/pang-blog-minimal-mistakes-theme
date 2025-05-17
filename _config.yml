@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Pang's Blog"
+title                    : " "
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Your Name"
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Pang Yen Wu"
+  name             : " "
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a follower of Jesus Christ"
-  location         : "Taiwan"
+  bio              : " "
+  location         : " "
   email            :
   links:
     - label: "Email"
