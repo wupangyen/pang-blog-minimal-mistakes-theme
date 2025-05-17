@@ -1,17 +1,30 @@
 ---
 layout: single
-title: "Most Frequent Element In An Array "
+title: Finding the Most Frequent Element in an Array — 3 Approaches (Java)
 author: 邦彥
 date: 2025-05-16T18:26:00.000Z
 thumbnail: /images/pexels-luis-gomes-166706-546819.jpg
 ---
-Question Link: <https://www.geeksforgeeks.org/problems/most-frequent-element-in-an-array/1>\
-\
-There are 3 approaches to tackle this question \
-\
-First is the Naive approach, the time complexity is O(n^2), we are using 2 for loops 
 
-and is O(1) space because the 2 for loop is going through the same array, we didn't create any extra space in this algorithm 
+
+
+### 🔗Problem Link: [https://www.geeksforgeeks.org/problems/most-frequent-element-in-an-array/1](<>)[](https://www.geeksforgeeks.org/problems/most-frequent-element-in-an-array/1)
+
+[](https://www.geeksforgeeks.org/problems/most-frequent-element-in-an-array/1)
+
+## ✅ Objective
+
+Given an array of integers, return the most frequent element. If multiple elements have the same highest frequency, return the one with the greater value.
+
+
+
+## 1️⃣ Naive Approach
+
+The time complexity is O(n^2), because we are using 2 for loops, and is O(1) space because the 2 for loop is going through the same array, we didn't create any extra space in this algorithm 
+
+
+
+### 🧑🏻‍💻 Code:
 
 ```
 class Solution {
@@ -39,12 +52,18 @@ class Solution {
 }
 ```
 
-\
-better approach
+
+
+## 2️⃣ Better Approach (Using Sorting)
 
 we sort first, and use linear traversal to find the most frequent number \
 for time complexity is O(nlogn) because of sorting average take that amount of time\
 for space complexity is O(1) we didn't create extra space in this case 
+
+
+
+
+### 🧑🏻‍💻 Code:
 
 ```
 class Solution {
@@ -70,9 +89,16 @@ class Solution {
 }
 ```
 
-optimal approach\
+
+
+## 3️⃣ Optimal Approach (Using HashMap)
+
 \
-use a hash table, use O(n) time and O(n) space 
+\
+use a hash table, use O(n) time and O(n) space \
+we store the frequency of each number in the array in a single traversal.
+
+### 🧑🏻‍💻Code:
 
 ```
 import java.util.HashMap;
