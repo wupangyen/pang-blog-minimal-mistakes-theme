@@ -40,4 +40,34 @@ class Solution {
 ```
 
 \
-second approach
+better approach
+
+we sort first, and use linear traversal to find the most frequent number \
+for time complexity is O(nlogn) because of sorting average take that amount of time\
+for space complexity is O(1) we didn't create extra space in this case 
+
+```
+class Solution {
+    public int mostFreqEle(int[] arr) {
+      Arrays.sort(arr);
+      
+      int res = arr[i], currCnt = 1, maxCnt = 1;
+      for(int i = 1; i < arr.length; i++) {
+        if(arr[i] == arr[i-1]) {
+          currCnt++;
+        }
+        else {
+        currCnt = 1;
+        }
+        
+        if(currCnt > maxCnt || currCnt == maxCnt && arr[i] > res){
+          maxCnt = currCnt;
+          res = arr[i];
+        }
+      }
+      return res;
+    }
+}
+```
+
+optimal approach
