@@ -70,4 +70,31 @@ class Solution {
 }
 ```
 
-optimal approach
+optimal approach\
+\
+use a hash table, use O(n) time and O(n) space 
+
+```
+import java.util.HashMap;
+class Solution {
+    public int mostFreqEle(int[] arr) {
+      HashMap<Integer, Integer> freqMap = new HashMap<Integer, Integer>();
+      for(int i = 0; i < arr.length; i++){
+        freqMap.put(arr[i],freqMap.getOrDefault(arr[i],0)+1);
+      }
+      
+      int res = -1;
+      int maxCnt = 0;
+      for(var entry: freq.entrySet()) {
+        int count = entry.getValue();
+        int val = entry.getKey();
+        
+        if(count > maxCnt || count == maxCnt && val > res){
+          maxCnt = count;
+          res = val;
+        }
+      }
+      return res;
+    }
+}
+```
