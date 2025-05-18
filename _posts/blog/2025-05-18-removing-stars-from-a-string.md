@@ -12,7 +12,22 @@ Currently
 
 `result = result + value.next();`\
 this part the complexity is O(n^2)\
-can be improved with string builder 
+can be improved with string builder \
+\
+so why is string concatenation in a loop time complexity O(n^2)?\
+example: we have a string "god"
+
+"" + g\
+g + o
+
+go + d
+
+so each operation don't just add a single character a time, instead it's creating a new string and added the previous string \
+\
+\
+1 + 2  + 3 + ....... +n\
+total copy operation under the hood\
+which is n(n+1)/2 = n^2
 
 ```
 class Solution {
