@@ -60,7 +60,7 @@ before we have 2 vectors pre and cur
 
 but pre\[j](the value from the row above) is just cur\[j] before updating
 
-by iterating from left to right we ensure that cur\[j-1] holds the correct value for current row (left) and cur\[j] holds the correct value for previous role(top)so we don't need pre\[j] this vector 
+by iterating from left to right we ensure that cur\[j-1] holds the correct value for current row (left) and cur\[j] holds the correct value for previous role(top)
 
 ```
 class Solution {
