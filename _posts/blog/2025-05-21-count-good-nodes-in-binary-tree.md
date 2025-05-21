@@ -5,7 +5,9 @@ author: 邦彥
 date: 2025-05-21T15:07:00.000Z
 thumbnail: /images/pexels-luis-gomes-166706-546819.jpg
 ---
-
+🔗 https://leetcode.com/problems/count-good-nodes-in-binary-tree/?envType=study-plan-v2&envId=leetcode-75\
+Time: O(n) n is the total number of nodes\
+Space: O(h) h is the height of the tree
 
 ```
 /**
