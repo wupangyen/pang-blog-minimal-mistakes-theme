@@ -5,6 +5,23 @@ author: 邦彥
 date: 2025-05-20T21:17:00.000Z
 thumbnail: /images/pexels-luis-gomes-166706-546819.jpg
 ---
+we use two pointers method.\
+slow pointer set to the prev node
+
+fast pointer set to the head node
+
+\
+fast is going twice as fast as slow, so when fast is at the node before the last node of the linked list, slow is at the position before the middle node, and we remove the middle element by setting slow-> next = slow -> next -> next \
+\
+\
+\
+Time: O(n) n is the length of linked list \
+Space: O(1)
+
+
+
+
+
 ```
 /**
  * Definition for singly-linked list.
